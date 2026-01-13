@@ -1,26 +1,31 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@theme {
+  /* আপনার ফন্টগুলো এখানে ভেরিয়েবল হিসেবে সেট করা হলো */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* চোখের আরামের জন্য কাস্টম কালার (অপশনাল) */
+  --color-soft-dark: #020617;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* নিচের এই অংশটুকু Tailwind-কে ডার্ক মোড চিনতে সাহায্য করবে */
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #0f172a;
+}
+
+.dark {
+  --background: #020617; /* একদম গাঢ় নীল যা চোখের জন্য আরামদায়ক */
+  --foreground: #f1f5f9;
+}
+
+/* আপনার প্লেইন টেক্সট সমস্যা দূর করার জন্য নিচের অংশটুকু জরুরি */
+@layer base {
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)] antialiased transition-colors duration-300;
+    font-family: var(--font-geist-sans), ui-sans-serif, system-ui;
   }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
