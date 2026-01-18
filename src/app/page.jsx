@@ -1,10 +1,11 @@
 import About from "@/components/Landing/About";
+import Categories from "@/components/Landing/Categories";
 import Features from "@/components/Landing/Features";
 import Hero from "@/components/Landing/Hero";
-import Newsletter from "@/components/Landing/Newsletter";
-import Portfolio from "@/components/Landing/Portfolio";
-import Pricing from "@/components/Landing/Pricing";
-import Testimonial from "@/components/Landing/Testimonial";
+import Reviews from "@/components/Landing/Reviews";
+import Trending from "@/components/Landing/Trending";
+import TrustSection from "@/components/Landing/TrustSection";
+
 
 export default function Home() {
   return (
@@ -12,10 +13,10 @@ export default function Home() {
       <Hero></Hero>
       <Features></Features>
       <About></About>
-      <Portfolio></Portfolio>
-      <Pricing></Pricing>
-      <Testimonial></Testimonial>
-      <Newsletter></Newsletter>
+      <Trending></Trending>
+      <Categories></Categories>
+      <Reviews></Reviews>
+      <TrustSection></TrustSection>
     </div>
   );
 }
