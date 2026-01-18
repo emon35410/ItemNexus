@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🚀 ItemNexus - Modern E-Commerce Experience
+ItemNexus is a versatile development toolkit and e-commerce platform built on Next.js, designed to accelerate the creation of scalable, maintainable web applications. It combines a robust architecture with integrated styling, authentication, and browsing features to streamline your development workflow.
 
-## Getting Started
+🛠 Tech Stack
+Frontend: Next.js (App Router).
 
-First, run the development server:
+Backend: Node.js & Express.js.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Styling: Tailwind CSS for rapid UI development.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Authentication: Built-in NextAuth.js supporting mock credentials and OAuth.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Hosting: Deployed on Vercel as Serverless Functions.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✨ Core Features
+Path Alias Configuration: Simplifies module imports and promotes consistent code organization.
 
-## Learn More
+Next.js Optimization: Supports dynamic routing, server-side rendering, and secure image handling.
 
-To learn more about Next.js, take a look at the following resources:
+Theme Management: Facilitates dynamic theme switching for a personalized, eye-comfort-focused user experience.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Modular Components: Provides a comprehensive set of reusable UI components.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Serverless API: A high-performance backend fetching data from structured JSON files.
 
-## Deploy on Vercel
+📁 Project Structure
+The backend repository is organized for clarity and performance on Vercel:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Plaintext
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+/NEXUS-SERVER
+  ├── /data
+  │    └── products.json   # Product database (JSON format)
+  ├── index.js             # Main Express server file
+  ├── vercel.json          # Vercel deployment configuration
+  ├── .gitignore           # Git ignore rules
+  ├── package.json         # Backend dependencies
+  └── package-lock.json    # Locked dependency versions
+🚀 Getting Started
+1. Prerequisites
+Programming Language: JavaScript.
+
+Package Manager: npm.
+
+2. Installation
+Build seamlessly from the source:
+
+Clone the repository: git clone https://github.com/your-username/ItemNexus.git.
+
+Navigate to the project directory: cd ItemNexus.
+
+Install dependencies: npm install.
+
+3. Usage
+Run the development server: npm run dev.
+
+🔐 Mock Credentials
+For testing purposes, use the following admin access:
+
+Email: admin@nexus.com
+
+Password: 123456
+
+🌐 API Endpoints
+Live Backend: https://item-nexus-server.vercel.app
