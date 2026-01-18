@@ -13,9 +13,8 @@ const ProductDetails = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const res = await fetch('http://localhost:5000/products');
+                const res = await fetch('https://item-nexus-server.vercel.app/products');
                 const allProducts = await res.json();
-                // আইডি অনুযায়ী প্রোডাক্ট খুঁজে বের করা
                 const foundProduct = allProducts.find(p => p.id === parseInt(id));
                 setProduct(foundProduct);
                 setLoading(false);

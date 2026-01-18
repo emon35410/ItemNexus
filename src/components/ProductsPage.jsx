@@ -16,7 +16,7 @@ const ProductsPage = () => {
         setMounted(true);
         const fetchProducts = async () => {
             try {
-                const res = await fetch('http://localhost:5000/products');
+                const res = await fetch('https://item-nexus-server.vercel.app/products');
                 const data = await res.json();
                 setProducts(data);
                 setLoading(false);

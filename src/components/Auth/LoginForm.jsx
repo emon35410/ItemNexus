@@ -46,6 +46,20 @@ export default function LoginForm() {
         <div className='min-h-screen pt-32 pb-16 flex items-center justify-center px-6 bg-slate-50 dark:bg-slate-950 transition-colors'>
             <div className="w-full max-w-md p-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] shadow-2xl">
                 <h2 className="text-2xl font-black mb-6 dark:text-white text-center">Login</h2>
+                {/* Demo Credentials Box */}
+                <div className="mb-8 p-4 bg-indigo-50/50 dark:bg-indigo-900/10 border border-indigo-100 dark:border-indigo-900/30 rounded-2xl">
+                    <p className="text-[10px] uppercase tracking-widest font-black text-indigo-600 dark:text-indigo-400 mb-2">Demo Admin Access</p>
+                    <div className="flex flex-col gap-1">
+                        <div className="flex justify-between items-center text-sm">
+                            <span className="text-slate-500">Email:</span>
+                            <code className="font-mono font-bold text-slate-900 dark:text-indigo-200">admin@nexus.com</code>
+                        </div>
+                        <div className="flex justify-between items-center text-sm">
+                            <span className="text-slate-500">Pass:</span>
+                            <code className="font-mono font-bold text-slate-900 dark:text-indigo-200">123456</code>
+                        </div>
+                    </div>
+                </div>
 
                 {error && (
                     <div className="mb-4 p-3 text-sm text-rose-500 bg-rose-50 dark:bg-rose-900/10 border border-rose-200 dark:border-rose-800 rounded-xl text-center">
@@ -87,7 +101,9 @@ export default function LoginForm() {
                         Don&apos;t have an account? <Link href="/signup" className="text-indigo-600 font-bold hover:underline">Register</Link>
                     </p>
                 </form>
+
             </div>
+
         </div>
     );
 }

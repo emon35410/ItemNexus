@@ -11,7 +11,7 @@ export default function Trending() {
   useEffect(() => {
     const fetchRecent = async () => {
       try {
-        const res = await fetch('http://localhost:5000/products?limit=4');
+        const res = await fetch('https://item-nexus-server.vercel.app/products?limit=4');
         const data = await res.json();
         setRecentProducts(data);
         setLoading(false);

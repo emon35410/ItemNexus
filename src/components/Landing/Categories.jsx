@@ -19,7 +19,7 @@ export default function Categories() {
   useEffect(() => {
     const fetchCounts = async () => {
       try {
-        const res = await fetch('http://localhost:5000/products');
+        const res = await fetch('https://item-nexus-server.vercel.app/products');
         const allProducts = await res.json();
 
         const categoryCounts = allProducts.reduce((acc, product) => {
