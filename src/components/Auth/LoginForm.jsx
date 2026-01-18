@@ -44,7 +44,7 @@ export default function LoginForm() {
 
     return (
         <div className='min-h-screen pt-32 pb-16 flex items-center justify-center px-6 bg-slate-50 dark:bg-slate-950 transition-colors'>
-            <div className="w-full max-w-md p-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-[2rem] shadow-2xl">
+            <div className="w-full max-w-md p-8 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-4xl shadow-2xl">
                 <h2 className="text-2xl font-black mb-6 dark:text-white text-center">Login</h2>
                 {/* Demo Credentials Box */}
                 <div className="mb-8 p-4 bg-indigo-50/50 dark:bg-indigo-900/10 border border-indigo-100 dark:border-indigo-900/30 rounded-2xl">
